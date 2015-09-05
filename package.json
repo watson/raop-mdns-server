@@ -1,0 +1,35 @@
+{
+  "name": "raop-mdns-server",
+  "version": "0.0.0",
+  "description": "A RAOP mDNS broadcast server",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "keywords": [
+    "raop",
+    "mdns",
+    "multicast",
+    "bonjour",
+    "zeroconf",
+    "server"
+  ],
+  "author": "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "getmac": "^1.0.7",
+    "mdns": "^2.2.9"
+  },
+  "devDependencies": {
+    "standard": "^5.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watson/raop-mdns-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/watson/raop-mdns-server/issues"
+  },
+  "homepage": "https://github.com/watson/raop-mdns-server#readme"
+}
