@@ -2,7 +2,7 @@
 
 A RAOP mDNS broadcast server.
 
-This moduel is not a RAOP server in it self, but mearly broadcasting its
+This module is not a RAOP server in it self, but mearly broadcasting its
 address (the mac/ip of the machine running this Node module) using
 multicast DNS.
 
