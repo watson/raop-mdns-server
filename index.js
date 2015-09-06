@@ -33,7 +33,7 @@ module.exports = function (opts, cb) {
       .start()
 
     process.nextTick(function () {
-      cb(null, mac)
+      cb(null, txt)
     })
   }
 
