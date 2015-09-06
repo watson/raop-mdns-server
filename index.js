@@ -7,7 +7,6 @@ var debug = require('debug')(pkg.name)
 
 // required options:
 // - name
-// - version (not required if txt is given)
 // - port
 //
 // optional options:
@@ -38,20 +37,21 @@ module.exports = function (opts, cb) {
   }
 
   function generateTxt (mac) {
-    var model = opts.name + opts.version.split('.').slice(0, -1).join(',')
-
     return {
       txtvers: '1',     // TXT record version 1
       ch: '2',          // audio channels: stereo
       cn: '0,1,2,3',    // audio codecs
+      da: 'true',
       et: '0,3,5',      // supported encryption types
       md: '0,1,2',      // supported metadata types
       pw: 'false',      // does the speaker require a password?
+      sv: 'false',
       sr: '44100',      // audio sample rate: 44100 Hz
       ss: '16',         // audio sample size: 16-bit
       tp: 'UDP',        // supported transport: TCP or UDP
-      vs: opts.version, // server version
-      am: model         // device model
+      vs: '130.14',     // server version
+      am: 'AppleTV2,1', // device model
+      sf: '0x4'
     }
   }
 }
