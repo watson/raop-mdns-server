@@ -26,7 +26,7 @@ module.exports = function (opts, cb) {
   function broadcast (mac) {
     var fullName = mac.toUpperCase().replace(/:/g, '') + '@' + opts.name
     var txt = opts.txt || generateTxt(mac)
-    debug('Advertising RAOP server on port %d', opts.port, fullName)
+    debug('Advertising RAOP server on port %d', opts.port, fullName, txt)
 
     mdns
       .createAdvertisement(mdns.tcp('raop'), opts.port, { name: fullName, txtRecord: txt })
