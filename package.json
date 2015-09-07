@@ -1,6 +1,6 @@
 {
   "name": "raop-mdns-server",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A RAOP mDNS broadcast server",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/watson/raop-mdns-server#readme",
   "coordinates": [
-    55.6928897,
-    12.547805
+    52.2491798,
+    -7.0602781
   ]
 }
